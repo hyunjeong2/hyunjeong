@@ -1,0 +1,319 @@
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+.gmail{
+  display: inline-block;
+	position:absolute;
+  top:47%;
+	left:25%;
+  }
+
+.phone{
+  display: inline-block;
+  position:absolute;
+  top:49%;
+	left:38%;
+}
+
+.tumblr{
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+
+.pinterest{
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:62%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 5em; /* 48px */
+  text-align: center;
+  font-family: serif;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 100px;
+}
+.contact{
+  margin-top:200px;
+}
+#hyunjeong{
+  margin-top:200px;
+}
+
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+a:link,a:visited
+{
+    display:inline-block;
+    margin-right: -4px;
+    width:200px;
+    color: grey;
+    text-align:center;
+    padding:5px;
+    padding-top: 0px;
+    text-decoration:none;
+    font-family: serif;
+    text-transform:uppercase;
+}
+a:hover,a:active{
+    text-decoration: underline;
+}
+
+.home{
+  position: absolute;
+  left:42%;
+  top: 70%;
+}
+
+.aboutme,
+.aboutme:link,
+.aboutme:visited{
+    text-decoration:none;
+    font-family: serif;
+    display:inline;
+    margin-right: 0px;
+    color: black;
+    padding: 0px;
+    padding-top: 0px;
+    text-transform: none;
+
+}
+
+.aboutme:hover,
+.aboutme:active{
+  text-decoration: underline;
+
+}
+
+.hello{
+  text-align: center;
+  font-family: serif;
+  font-size: 2em;
+  position: absolute;
+  top:33%;
+  left:39%;
+
+}
+
+.aboutme1{
+  position: absolute;
+  top:8%;
+  left:16%;
+}
+.p{
+  line-height: 230%;
+  font-size: 1.3em;
+  font-family: serif;
+  text-align: center;
+  width: 700px;
+  position: absolute;
+  left:24%;
+  top:42%;
+}
+.skills{
+  font-family: serif;
+  text-align: center;
+  font-size: 1.3em;
+  position: absolute;
+  left:28.6%;
+  top:60.5%;
+  color: black;
+}
+
+.works{
+  margin-top:200px;
+}
+
+.typography{
+  position:absolute;
+  top:100%;
+  left:12%;
+}
+.typography2{
+  position:absolute;
+  top:115%;
+  right:22%;
+}
+
+.highschool{
+  position:absolute;
+  top: 210%;
+  left:7%;
+}
+.highschool2{
+  position:absolute;
+  top: 210%;
+  right:7%;
+}
+.PEC{
+  position:absolute;
+  top: 310%;
+  right:37%;
+}
+
+.church{
+  position:absolute;
+  top: 390%;
+  right:27%;
+}
+
+.animation{
+  position:absolute;
+  top: 500%;
+  right:22%;
+}
+
+.playbill{
+  position:absolute;
+  top: 600%;
+  right:33.3%;
+}
+
+.hyukoh{
+  position:absolute;
+  top: 700%;
+  right:22.5%;
+}
+
+.brownie{
+  position:absolute;
+  top: 800%;
+  right:20%;
+  padding-bottom: 125px;
+}
+
+.workhome{
+  position: absolute;
+  left:42%;
+  top:870%;
+}
+
+.arrow{
+  position: absolute;
+  left:48%;
+  top:90%;
+}
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
